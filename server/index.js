@@ -12,7 +12,7 @@ let connectedUsernames = [];
 
 const io = new Server(server, {
   cors: {
-    origin: `https://rizzchat-server-rishabhmaindolas-projects.vercel.app/`,
+    origin: `https://rizzchat-rishabhmaindolas-projects.vercel.app/`,
     methods: ["GET", "POST"],
   },
 });
