@@ -4,16 +4,8 @@
     { "src": "*.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "handle": "server"
-    },
-    {
-      "src": "/socket.io/(.*)",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
+    { "handle": "filesystem" },
+    { "src": "/socket.io/(.*)", "dest": "/index.js" },
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
