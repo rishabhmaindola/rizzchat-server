@@ -16,6 +16,10 @@ const io = new Server(server, {
     methods: ["GET", "POST"],
   },
 });
+app.get("/", (req, res) => {
+  res.send("SERVER IS LIVE");
+});
+
 
 server.listen(port, () => {
   console.log(`Server is started on port ${port}`);
