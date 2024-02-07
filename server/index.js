@@ -5,7 +5,6 @@ const cors = require("cors");
 const { Server } = require("socket.io");
 
 const app = express();
-const port = process.env.port || 5000;
 const server = http.createServer(app);
 
 let connectedUsernames = [];
@@ -20,6 +19,7 @@ app.get("/", (req, res) => {
   res.send("SERVER IS LIVE");
 });
 
+const port = process.env.port || 5000;
 
 server.listen(port, () => {
   console.log(`Server is started on port ${port}`);
