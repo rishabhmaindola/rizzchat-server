@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
   res.send("SERVER IS LIVE");
 });
 
-const port = process.env.port || 5000;
+const port = process.env.port;
 
 server.listen(port, () => {
   console.log(`Server is started on port ${port}`);
